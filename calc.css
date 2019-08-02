@@ -1,0 +1,148 @@
+body{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.case{
+  width:25vw;
+  height:60vh;
+  background-color:#636363;
+  align-item:center;
+  border-radius:9px 9px 9px 9px;
+
+
+}
+.row{
+
+}
+.calc-btn{
+  background-color:lightgray;
+  color:black;
+  width:5vw;
+  height:8vh;
+  border:1px solid #636363;
+  text-align:center;
+  cursor:pointer;
+  font-size:4vh;
+  font-weight:100;
+  padding-top:3px;
+  border-radius: 10px 10px 10px 10px;
+  flex:1;
+}
+#calc-clear{
+  border-radius: 0px 0px 10px 0px;
+}
+#calc-backspace{
+  border-radius: 0px 0px 0px 10px;
+}
+#calc-divide{
+  border-radius: 0px 0px 0px 0px;
+}
+#calc-multiply{
+  border-radius: 0px 0px 0px 0px;
+}
+#calc-minus{
+  border-radius: 0px 0px 0px 0px;
+}
+#calc-plus{
+  border-radius: 0px 0px 0px 0px;
+}
+#calc-equals{
+  border-radius: 0px 0px 0px 0px;
+}
+#calc-decimal{
+  border-radius: 10px 0px 0px 0px;
+}
+#calc-three{
+  border-radius: 10px 0px 0px 10px;
+}
+#calc-six{
+  border-radius: 10px 0px 0px 10px;
+}
+#calc-nine{
+  border-radius: 10px 0px 0px 10px;
+}
+#calc-eight{
+  border-radius: 0px 10px 10px 10px;
+}
+#calc-two{
+  border-radius: 10px 10px 10px 0px;
+}
+#calc-seven{
+  border-radius: 0px 0px 10px 0px;
+}
+#calc-four{
+  border-radius: 0px 10px 10px 0px;
+}
+#calc-one{
+  border-radius: 0px 10px 0px 0px;
+}
+#calc-zero{
+  border-radius: 0px 10px 0px 0px;
+}
+#calc-roman{
+  border-radius: 0px 0px 0px 0px;
+}
+.calc-btn:hover{
+  background-color:white;
+}
+.row {
+  display:table;
+  justify-item:center;
+  margin:auto;
+  table-layout:fixed;
+  width:400px
+}
+.column{
+ display:table-cell;
+}
+#calc-zero{
+  width:10vw;
+
+}
+#calc-clear{
+  width:10vw;
+}
+#calc-display-val{
+  height:6vh;
+  color:white;
+  width:19vw;
+  text-align:right;
+
+  border-top:5px solid #636363;
+
+  font-size:5vh;
+  background-color:#494b4d;
+  overflow:hidden;
+  White-space:no-wrap;
+  padding:12px;
+}
+.calc-btn-operator{
+   background-color:#eb2d2d;
+  color:white;
+}
+.calc-btn-operator:hover{
+  background-color:white;
+  color:black;
+}
+h1{
+  text-align:center;
+  margin-top:50px;
+}
+
+#calc-parent{
+  margin-left: calc(50% - 12vw);
+}
+#calc-roman{
+  background-color:#eb2d2d;
+  color:white;
+  width:20vw;
+}
+#calc-roman:hover{
+  background-color:white;
+  color:black;
+}
