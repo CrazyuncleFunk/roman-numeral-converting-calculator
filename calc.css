@@ -1,148 +1,124 @@
 body{
-  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+  text-align:center;
+  height:100vh;
+  width:100vw;
+}
+h1{
+  font:1vh;
 }
 .case{
-  width:25vw;
-  height:60vh;
-  background-color:#636363;
-  align-item:center;
-  border-radius:9px 9px 9px 9px;
-
-
+  height:80vh;
+  width:40vw;
+  background-color:grey;
+  margin: auto;
+  
 }
 .row{
-
+  width:35vw;
+  display:flex;
+  
+  margin-left:2.5vw;
 }
 .calc-btn{
-  background-color:lightgray;
-  color:black;
-  width:5vw;
-  height:8vh;
-  border:1px solid #636363;
-  text-align:center;
-  cursor:pointer;
-  font-size:4vh;
-  font-weight:100;
-  padding-top:3px;
-  border-radius: 10px 10px 10px 10px;
   flex:1;
-}
-#calc-clear{
-  border-radius: 0px 0px 10px 0px;
-}
-#calc-backspace{
-  border-radius: 0px 0px 0px 10px;
-}
-#calc-divide{
-  border-radius: 0px 0px 0px 0px;
-}
-#calc-multiply{
-  border-radius: 0px 0px 0px 0px;
-}
-#calc-minus{
-  border-radius: 0px 0px 0px 0px;
-}
-#calc-plus{
-  border-radius: 0px 0px 0px 0px;
-}
-#calc-equals{
-  border-radius: 0px 0px 0px 0px;
-}
-#calc-decimal{
-  border-radius: 10px 0px 0px 0px;
-}
-#calc-three{
-  border-radius: 10px 0px 0px 10px;
-}
-#calc-six{
-  border-radius: 10px 0px 0px 10px;
-}
-#calc-nine{
-  border-radius: 10px 0px 0px 10px;
-}
-#calc-eight{
-  border-radius: 0px 10px 10px 10px;
-}
-#calc-two{
-  border-radius: 10px 10px 10px 0px;
-}
-#calc-seven{
-  border-radius: 0px 0px 10px 0px;
-}
-#calc-four{
-  border-radius: 0px 10px 10px 0px;
-}
-#calc-one{
-  border-radius: 0px 10px 0px 0px;
-}
-#calc-zero{
-  border-radius: 0px 10px 0px 0px;
-}
-#calc-roman{
-  border-radius: 0px 0px 0px 0px;
+  border:0.3vh solid black;
+  background-color:silver;
+  height:10vh;
+  font-size:5vh;
+  line-height:10vh;
 }
 .calc-btn:hover{
   background-color:white;
-}
-.row {
-  display:table;
-  justify-item:center;
-  margin:auto;
-  table-layout:fixed;
-  width:400px
-}
-.column{
- display:table-cell;
-}
-#calc-zero{
-  width:10vw;
-
-}
-#calc-clear{
-  width:10vw;
+  color:black;
 }
 #calc-display-val{
-  height:6vh;
+  height:15vh;
+  width:35vw;
   color:white;
-  width:19vw;
+  background-color:black;
   text-align:right;
-
-  border-top:5px solid #636363;
-
-  font-size:5vh;
-  background-color:#494b4d;
-  overflow:hidden;
-  White-space:no-wrap;
-  padding:12px;
+  line-height:15vh;
+  font-size:3vw;
 }
-.calc-btn-operator{
-   background-color:#eb2d2d;
-  color:white;
+#calc-clear{
+  flex:2;
+  padding-right:0.2vw;
+  
 }
-.calc-btn-operator:hover{
-  background-color:white;
-  color:black;
-}
-h1{
-  text-align:center;
-  margin-top:50px;
-}
-
-#calc-parent{
-  margin-left: calc(50% - 12vw);
+#calc-zero{
+  flex:2;
+  padding-right:0.2vw;
 }
 #calc-roman{
-  background-color:#eb2d2d;
-  color:white;
-  width:20vw;
+  font-size:2vw;
+  
 }
-#calc-roman:hover{
-  background-color:white;
-  color:black;
+@media screen and (max-width: 600px){
+  .case{
+  height:80vh;
+  width:70vw;
+  background-color:silver;
+  margin:auto;
+  
+}
+  #calc-display-val{
+  height:15vh;
+  width:60vw;
+  color:white;
+  background-color:black;
+  text-align:right;
+  
+  font-size:3em;
+}
+.row{
+  width:60vw;
+  display:flex;
+  
+  margin-left:4vw;
+}
+}
+@media screen and(max-width: 400px){
+  .case{
+  height:80vh;
+  width:100vw;
+  background-color:silver;
+  margin:auto;
+  
+}
+.row{
+  width:90vw;
+  display:flex;
+  
+  margin-left:5vw;
+}
+  
+  
+  #calc-display-val{
+  height:15vh;
+  width:90vw;
+  color:white;
+  background-color:black;
+  text-align:right;
+  
+  font-size:3em;
+}
+  #calc-clear{
+  flex:2;
+  padding-right:1vw;
+  
+}
+#calc-zero{
+  flex:2;
+  padding-right:10vw;
+}
+  .calc-btn{
+    font-size:1vh;
+  }
 }
