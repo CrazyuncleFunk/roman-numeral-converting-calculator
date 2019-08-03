@@ -27,11 +27,11 @@ for(let i = 0;i<calcNumBtns.length;i++){
   calcNumBtns[i].addEventListener("click",function(clickObj){
    test = 0;
     let btnText = clickObj.target.innerText;
-    if(displayVal === '0'){ 
+    if(displayVal === '0'){
         displayVal = '';
     }
     displayVal += btnText;
-    displayValElement.innerText = displayVal;                               
+    displayValElement.innerText = displayVal;
                                   } , false);
 }
 let performOperation = (clickObj) => {
@@ -92,7 +92,7 @@ backspaceBtn.onclick = () =>{
   displayVal = displayVal.slice(0,lengthOfDisplayVal - 1);
 
   displayValElement.innerHTML = displayVal;
-     if(displayVal === '' ){ 
+     if(displayVal === '' ){
         displayValElement.innerHTML = '0';
     }
 }
@@ -102,9 +102,9 @@ decimalBtn.addEventListener("click",function(clickObj){
      displayValElement.innerHTML = '0' + "."
    }
     displayVal += "."
-  
+
     displayValElement.innerText = displayVal;
-}                         
+}
                             } , false);
 
 let convertToRoman = function(num) {
@@ -121,7 +121,7 @@ let convertToRoman = function(num) {
     }
   }
 
-  
+
   displayValElement.innerHTML= romanized
 }
 
@@ -134,7 +134,7 @@ decimalBtn.onlick = () =>{
 }
 
 
- 
+
 romanBtn.addEventListener("click",function(clickObj){
  if(test === 0){
     test++;
@@ -145,6 +145,5 @@ romanBtn.addEventListener("click",function(clickObj){
   }
   if(displayVal == 0){
     displayValElement.innerHTML = "0";
-  }                         
+  }
                           } , false);
-

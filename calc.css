@@ -18,12 +18,12 @@ h1{
   width:40vw;
   background-color:grey;
   margin: auto;
-  
+
 }
 .row{
   width:35vw;
   display:flex;
-  
+
   margin-left:2.5vw;
 }
 .calc-btn{
@@ -50,43 +50,110 @@ h1{
 #calc-clear{
   flex:2;
   padding-right:0.2vw;
-  
+
 }
 #calc-zero{
   flex:2;
   padding-right:0.2vw;
 }
 #calc-roman{
-  font-size:5vh;
-  
+  font-size:4vh;
+
+}
+@media screen and (max-width: 1500px){
+  #calc-roman{
+  font-size:3vh;
+
 }
 @media screen and (max-width: 1400px){
   #calc-roman{
-  font-size:3vh;
-  
+  font-size:2.5vh;
+
 }
-@media screen and (max-width: 1000px){
-  #calc-roman{
-  font-size:3vh;
-  
-}
+
 @media screen and (max-width: 900px){
   #calc-roman{
-  font-size:2.5vh;
-  
+  font-size:2vh;
+
+}
+.case{
+height:80vh;
+width:70vw;
+background-color:gray;
+margin:auto;
+
+}
+#calc-display-val{
+height:15vh;
+width:60vw;
+color:white;
+background-color:black;
+text-align:right;
+
+font-size:3em;
+}
+.row{
+width:60vw;
+display:flex;
+
+margin-left:4vw;
+}
 }
 @media screen and (max-width: 800px){
   #calc-roman{
   font-size:2vh;
-  
+
+}
+.case{
+height:80vh;
+width:70vw;
+background-color:gray;
+margin:auto;
+
+}
+#calc-display-val{
+height:15vh;
+width:60vw;
+color:white;
+background-color:black;
+text-align:right;
+
+font-size:3em;
+}
+.row{
+width:60vw;
+display:flex;
+
+margin-left:4vw;
 }
 }
 @media screen and (max-width: 700px){
   #calc-roman{
   font-size:2vh;
-  
-}
 
+}
+.case{
+height:80vh;
+width:70vw;
+background-color:gray;
+margin:auto;
+
+}
+#calc-display-val{
+height:15vh;
+width:60vw;
+color:white;
+background-color:black;
+text-align:right;
+
+font-size:3em;
+}
+.row{
+width:60vw;
+display:flex;
+
+margin-left:4vw;
+}
 }
 @media screen and (max-width: 600px){
   .case{
@@ -94,7 +161,7 @@ h1{
   width:70vw;
   background-color:gray;
   margin:auto;
-  
+
 }
   #calc-display-val{
   height:15vh;
@@ -102,18 +169,18 @@ h1{
   color:white;
   background-color:black;
   text-align:right;
-  
+
   font-size:3em;
 }
 .row{
   width:60vw;
   display:flex;
-  
+
   margin-left:4vw;
 }
   #calc-roman{
-  font-size:2.5vh;
-  
+  font-size:2vh;
+
 }
   #calc-clear{
   flex:2;
@@ -123,4 +190,11 @@ h1{
   flex:2;
   padding-right:0.7vw;
 }
+}
+@media screen and (max-width: 500px){
+  #calc-roman{
+  font-size:2vh;
+
+}
+
 }
